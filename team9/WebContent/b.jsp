@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${ num1 } ~ ${ num2 }까지 모두 더한 값은 ${ sum }이다.
+	${ num1 }~${ num2 }까지 모두 더한 값은 ${ sum }이다.
 </body>
 </html>
