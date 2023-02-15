@@ -24,9 +24,19 @@ public class dServlet extends HttpServlet {
 		
 		List<Integer> rnum = new ArrayList<>();		
 		
+//		for(int i=0;i<count;i++) {
+//		int com=(int)(Math.random()*(num2-num1+1)+num1);
+//		rnum.add(com);
+//	}		
 		for(int i=0;i<count;i++) {
 			int com=(int)(Math.random()*(num2-num1+1)+num1);
-			rnum.add(com);
+			rnum.add(i,com);
+			for(int j=0;j<i;j++) {
+				if(rnum.get(i)==rnum.get(j)) {
+					rnum.remove(i);
+					i--;
+				}
+			}
 		}
 
 		for(int num:rnum) {
