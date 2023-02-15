@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>범위 만큼 갯수 램덤숫자 결과</title>
+<title>범위 만큼 갯수 램덤 숫자 결과</title>
 </head>
 <body>
 <%
