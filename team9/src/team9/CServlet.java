@@ -25,7 +25,8 @@ public class CServlet extends HttpServlet {
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-String str = request.getParameter("str");
+		request.setCharacterEncoding("utf-8");
+		String str = request.getParameter("str");
 		
 		int count = str.length();
 		
