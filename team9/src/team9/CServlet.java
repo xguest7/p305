@@ -16,7 +16,16 @@ public class CServlet extends HttpServlet {
        
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String str = request.getParameter("str");
+		
+	}
+
+	
+	
+	
+	
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+String str = request.getParameter("str");
 		
 		int count = str.length();
 		
@@ -27,14 +36,6 @@ public class CServlet extends HttpServlet {
 		
 		RequestDispatcher rd= request.getRequestDispatcher("c.jsp");
 		rd.forward(request, response);
-	}
-
-	
-	
-	
-	
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
 
