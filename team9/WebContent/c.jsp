@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-입력한 글자는${count }이다.
+입력한 글자는 ${count }자이다.
 </body>
 </html>
