@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/CServlet")
+@WebServlet("/c")
 public class CServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -25,7 +25,7 @@ public class CServlet extends HttpServlet {
 		request.setAttribute("count", count);
 		
 		
-		RequestDispatcher rd= request.getRequestDispatcher("/team9/c.jsp");
+		RequestDispatcher rd= request.getRequestDispatcher("c.jsp");
 		rd.forward(request, response);
 	}
 
