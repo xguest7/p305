@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-느낌표의 개수는 ${connt}이다.
+느낌표의 개수는 ${count}이다.
 </body>
 </html>
