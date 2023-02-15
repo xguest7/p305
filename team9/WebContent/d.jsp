@@ -8,11 +8,12 @@
 <title>범위 만큼 갯수 램덤 숫자 결과</title>
 </head>
 <body>
-<%
-String[] s=(String[])request.getAttribute("rnum");
-for(String r :s){ %>
-<%= r %>
-<% }%>
+
+<c:forEach items="${rnum}" var="num">
+	${num }  
+</c:forEach>
+
+
 
 </body>
 </html>
