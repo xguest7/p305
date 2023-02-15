@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/BServlet")
+@WebServlet("/b")
 public class BServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -18,10 +18,10 @@ public class BServlet extends HttpServlet {
 		int num1 = Integer.parseInt(request.getParameter("num1"));
 		int num2 = Integer.parseInt(request.getParameter("num2"));
 		int sum = 0;
-		for (; num1 <= num2; num1++) {
-			sum += num1;
+		for (int i=num1; i <= num2; i++) {
+			sum += i;
 		}
-
+		
 		request.setAttribute("num1", num1);
 		request.setAttribute("num2", num2);
 		request.setAttribute("sum", sum);
